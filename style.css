@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0;
+    background: url(https://images8.alphacoders.com/116/1169209.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+}
+
+#background-styling {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    background-color: rgba(0,0,0,0.6);
+    filter: blur(2px);
+}
+
+#title {
+    margin-top: 0;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#description {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#survey-form {
+    padding: 2rem;
+    font-size: 1.6rem;
+    background-color: rgba(0,0,0,0.85);
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.form-inner {
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    display: block;
+    box-sizing: border-box;
+    padding: 0.15rem;
+    margin: 0;
+    font-family: inherit;
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 2.5rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+input[type='checkbox'], input[type='radio'] {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.form-textarea {
+    height: 6rem;
+}
+
+button {
+    background-color: #228B22;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+button:hover {
+    color: white;
+    background-color: #006900;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+    #title {
+        font-size: calc(2rem * 0.75);
+    }
+    #description {
+        font-size: calc(1.5rem * 0.75);
+    }
+    #survey-form {
+        font-size: calc(1.6rem * 0.75);
+        width: 100%;
+        padding: 0.25rem;
+    }
+}

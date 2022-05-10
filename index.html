@@ -10,50 +10,83 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <main>
-            <h1 id="title">placeholder</h1>
-            <p id="description">placeholder</p>
+        <div id="background-styling"></div>
+        <main id="main">
+            <h1 id="title">Vampire: The Masquerade - Bloodhunt feedback survey</h1>
+            <p id="description">Thank you for taking your time to fill out this post-launch feedback survey! We're eager to improve our game!</p>
 
             <form id="survey-form" action="">
-                <label id="name-label" for="name">Username</label>
-                <input type="text" id="name" name="name" placeholder="Enter your username" required>
-                <label id="email-label" for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <label id="number-label" for="age">Age (optional)</label>
-                <input type="number" id="number" name="age" min="18" max="99" placeholder="Enter your age (optional)">
-                <label for="dropdown">Choose your platform</label>
-                <select name="dropdown" id="dropdown">
-                    <option value="PS5">PlayStation 5</option>
-                    <option value="Windows">Windows</option>
-                </select>
-                <legend>Would you recommend Bloodhunt to your friends?</legend>
-                <label for="definitely">Definitely</label>
-                <input type="radio" id="definitely" name="recommendation" value="definitely" checked>
-                <label for="maybe">Maybe</label>
-                <input type="radio" id="maybe" name="recommendation" value="maybe">
-                <label for="not-sure">Not sure</label>
-                <input type="radio" id="not-sure" name="recommendation" value="not-sure">
-                <legend>What problems have you encountered so far?</legend>
-                <label for="nothing">Nothing</label>
-                <input type="checkbox" id="nothing" name="issues" value="nothing">
-                <label for="crash">Game crashed</label>
-                <input type="checkbox" id="crash" name="issues" value="crash">
-                <label for="performance">Low performance (e.g. low FPS)</label>
-                <input type="checkbox" id="performance" name="issues" value="performance">
-                <label for="gameplay-bug">Bugs during gameplay</label>
-                <input type="checkbox" id="gameplay-bug" name="issues" value="gameplay-bug">
-                <label for="graphical">Graphical issue (e.g. missing textures)</label>
-                <input type="checkbox" id="graphical" name="issues" value="graphical">
-                <label for="network">Network issue (lag, disconnects)</label>
-                <input type="checkbox" id="network" name="issues" value="network">
-                <label for="comment">Do you have any additional feedback?</label>
-                <textarea id="story" name="story" rows="5" cols="33" placeholder="Write here your thoughts and experiences..."></textarea>
-                <button id="submit" type="submit">Submit!</button>
+                <div class="form-inner">
+                    <label id="name-label" for="name">Username</label>
+                    <input type="text" id="name" class="form-input" name="name" placeholder="Enter your username" required>
+                </div>
+                <div class="form-inner">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" class="form-input" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-inner">
+                    <label id="number-label" for="age">Age (optional)</label>
+                    <input type="number" id="number" class="form-input" name="age" min="18" max="99" placeholder="Enter your age (optional)">
+                </div>
+                <div class="form-inner">
+                    <label for="dropdown">Choose your platform</label>
+                    <select name="dropdown" id="dropdown" class="form-input">
+                        <option value="PS5">PlayStation 5</option>
+                        <option value="Windows">Windows</option>
+                    </select>
+                </div>
+                <div class="form-inner">
+                    <legend>Would you recommend Bloodhunt to your friends?</legend>
+                    <label for="definitely">
+                        <input type="radio" id="definitely" name="recommendation" value="definitely" checked>
+                        Definitely
+                    </label>
+                    <label for="maybe">
+                        <input type="radio" id="maybe" name="recommendation" value="maybe">
+                        Maybe
+                    </label>
+                    <label for="not-sure">
+                        <input type="radio" id="not-sure" name="recommendation" value="not-sure">
+                        Not sure
+                    </label>
+                </div>
+                <div class="form-inner">
+                    <legend>Have you encountered any problems so far?</legend>
+                    <label for="nothing">
+                        <input type="checkbox" id="nothing" name="issues" value="nothing">
+                        Nothing
+                    </label>
+                    <label for="crash">
+                        <input type="checkbox" id="crash" name="issues" value="crash">
+                        Game crashed
+                    </label>
+                    <label for="performance">
+                        <input type="checkbox" id="performance" name="issues" value="performance">
+                        Low performance (e.g. low FPS)
+                    </label>
+                    <label for="gameplay-bug">
+                        <input type="checkbox" id="gameplay-bug" name="issues" value="gameplay-bug">
+                        Bugs during gameplay
+                    </label>
+                    <label for="graphical">
+                        <input type="checkbox" id="graphical" name="issues" value="graphical">
+                        Graphical issue (e.g. missing textures)
+                    </label>
+                    <label for="network">
+                        <input type="checkbox" id="network" name="issues" value="network">
+                        Network issue (lag, disconnects)
+                    </label>
+                </div>
+                <div class="form-inner">
+                    <label for="comment">Do you have any additional feedback?</label>
+                    <textarea id="story" class="form-input form-textarea" name="story" rows="10" cols="33" placeholder="Write here your thoughts and experiences..."></textarea>
+                </div>
+                <div class="form-inner">
+                    <button id="submit" class="form-input" type="submit">Submit!</button>
+                </div>
             </form>
-
         </main>
 
-        
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
